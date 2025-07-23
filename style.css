@@ -38,3 +38,6 @@ body {
     height: 80%;
     object-fit: contain;
 }
+.ataque {
+  background-color: red !important;
+}
