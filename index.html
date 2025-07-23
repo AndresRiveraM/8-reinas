@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>8 Reinas</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Actividad 4 – 8 Reinas</h1>
-  <div id="tablero"></div>
+  <h1>Actividad Ajedrez</h1>
+
+  <label for="soluciones">Selecciona una solución:</label>
+  <select id="soluciones" aria-label="Selector de soluciones de 8 reinas">
+    <option value="">--Seleccionar--</option>
+    <option value="0">Solución 1</option>
+    <option value="1">Solución 2</option>
+    <option value="2">Solución 3</option>
+  </select>
+
+  <div id="tablero" role="grid" aria-label="Tablero de ajedrez de 8x8"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
