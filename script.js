@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
     [0, 5, 7, 2, 6, 3, 1, 4], // Solución 2
     [1, 3, 5, 7, 2, 0, 6, 4], // Solución 3
   ];
+  const btnReiniciar = document.getElementById("btnReiniciar");
+
+  // Botón reiniciar: limpia tablero y resetea selector y contador
+  btnReiniciar.addEventListener("click", () => {
+    limpiarTablero();
+    contadorReinas = 0;
+    selectSoluciones.value = "";
+  });
+
 
   // Crear tablero
   for (let fila = 0; fila < 8; fila++) {
